@@ -1,5 +1,5 @@
 def travel():
-    file = open("../adventofcode2021/input2.txt").readlines()
+    file = open("inputs/input2.txt").readlines()
     horizontal = 0
     depth = 0
 

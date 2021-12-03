@@ -1,15 +1,16 @@
 def binary_common():
-    file = open("../inputs/input3.txt").readlines()
+    file = open("inputs/input3.txt").readlines()
     epsilon = ''
     gamma = ''
+    counter = 0
 
-    for line in file:
+    while counter < 12:
         one = 0
         zero = 0
-        for char in line:
-            if char == '1':
+        for line in file:
+            if line[counter] == '1':
                 one += 1
-            elif char == '0':
+            elif line[counter] == '0':
                 zero += 1
         if one > zero:
             gamma = gamma + "1"
@@ -17,4 +18,5 @@ def binary_common():
         else:
             gamma = gamma + "0"
             epsilon = epsilon + "1"
-    return epsilon, gamma
+        counter += 1
+    return int(epsilon, 2) * int(gamma, 2)

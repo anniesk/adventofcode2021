@@ -1,5 +1,5 @@
 def sliding_count():
-    file = open('../inputs/input.txt').readlines()
+    file = open('inputs/input.txt').readlines()
     count = 0
     file_array = []
     prev_sum = 0

@@ -1,5 +1,5 @@
 def count_increased():
-    with open('../inputs/input.txt') as f:
+    with open('inputs/input.txt') as f:
         file = f.readlines()
 
     count = 0
@@ -19,7 +19,7 @@ def count_increased():
 
 
 def increased():
-    file = open("../inputs/input.txt").readlines()
+    file = open("inputs/input.txt").readlines()
     count = 0
     temp = 0
 
